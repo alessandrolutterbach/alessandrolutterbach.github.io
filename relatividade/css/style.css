@@ -4,9 +4,15 @@ body {
     justify-content: center;
 }
 
+main {
+    width: 75%;
+    height: 100%;
+    display: block;
+}
+
 h1 {
     color: #C70707;
-    font-size: 60px;
+    font-size: 3.8vw;
     font-weight: normal;
     text-align: center;
     align-self: center;
@@ -22,49 +28,51 @@ h3 {
 
 a {
     text-decoration: none;
+    width: 200px;
+    height: 200px;
+    padding-right: 15px;
 }
 
 header {
-    width: 1000px;
-    height: 300px;
+    width: 100%;
+    height: 270px;
+    display: flex;
 }
 
 .titulo {
-    width: 910px;
-    height: 190px;
+    width: 80%;
+    height: 60%;
     background-color: #FFFFFF;
     display: flex;
     justify-content: center;
-    margin-top: 50px;
-    left: 201px;
-    float: left;
-    position: absolute;
+    align-self: center;
+    z-index: 1;
 }
 
 .imagemHeader {
     width: 250px;
     height: 250px;
-    float: right;
-    position: absolute;
-    margin-top: 20px;
-    margin-left: 818px;
-
+    z-index: 0;
+    align-self: center;
+    margin-left: -3%;
 }
 
 .menu {
-    width: 990px;
-    height: 420px;
-    background-color: #FFFFFF;
-    position: absolute;
-    top: 300px;
+    width: 100%;
+    padding-top: 15px;
+}
 
+.coluna1, .coluna2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 15px;
 }
 
 .secao {
     width: 200px;
     height: 200px;
     background-size: contain;
-    position: relative;
 }
 
 .secao#um {
@@ -77,6 +85,7 @@ header {
 
 .secao#tres {
     background-image: url("/img/3.png");
+    background-size: cover;
 }
 
 .secao#quatro {
@@ -98,38 +107,38 @@ header {
 .sombreado {
     width: 200px;
     height: 50px;
-    opacity: 75%;
     justify-content: center;
     display: flex;
     position: relative;
     top: 150px;
 }
 
+
 .sombreado#um {
-    background-color: #032DFC;
+    background-color: rgba(3,45,252,.75);
 }
 
 .sombreado#dois {
-    background-color: #1DB933;
+    background-color: rgba(29,185,51,.75);
 }
 
 .sombreado#tres {
-    background-color: #7D0094;
+    background-color: rgba(125,0,148,.75);
 }
 
 .sombreado#quatro {
-    background-color: #BA3748;
+    background-color: rgba(186,55,72,.75);
 }
 
 .sombreado#cinco {
-    background-color: #323438;
+    background-color: rgba(50,52,56,.75);
 }
 
 .sombreado#seis {
-    background-color: #CE7E19;
+    background-color: rgba(206,126,25,.75);
 }
 
 .sombreado#sete {
-    background-color: #1F1590;
+    background-color: rgba(31,21,144,.75);
 }
 
