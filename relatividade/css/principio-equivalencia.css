@@ -1,0 +1,49 @@
+body {
+    background-color: #ECECEC;
+    display: flex;
+    justify-content: center;
+}
+
+h1 {
+    color: #ffffff;
+    font-size: 60px;
+    font-weight: normal;
+    text-align: center;
+    align-self: center;
+    
+}
+
+h3 {
+    color: #FFFFFF;
+    font-size: 20px;
+    font-weight: normal;
+    text-align: center;
+}
+
+header {
+    width: 1000px;
+    height: 300px;
+}
+
+.titulo {
+    width: 910px;
+    height: 190px;
+    background-color: #7D0094;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    left: 201px;
+    float: left;
+    position: absolute;
+}
+
+.imagemHeader {
+    width: 250px;
+    height: 250px;
+    float: right;
+    position: absolute;
+    margin-top: 20px;
+    margin-left: 818px;
+
+}
+

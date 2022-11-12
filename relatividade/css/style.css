@@ -10,14 +10,18 @@ h1 {
     font-weight: normal;
     text-align: center;
     align-self: center;
-    
 }
 
 h3 {
     color: #FFFFFF;
-    font-size: 20px;
+    font-size: 15px;
     font-weight: normal;
     text-align: center;
+    align-self: center;
+}
+
+a {
+    text-decoration: none;
 }
 
 header {
@@ -45,5 +49,87 @@ header {
     margin-top: 20px;
     margin-left: 818px;
 
+}
+
+.menu {
+    width: 990px;
+    height: 420px;
+    background-color: #FFFFFF;
+    position: absolute;
+    top: 300px;
+
+}
+
+.secao {
+    width: 200px;
+    height: 200px;
+    background-size: contain;
+    position: relative;
+}
+
+.secao#um {
+    background-image: url("/img/1.png");
+}
+
+.secao#dois {
+    background-image: url("/img/2.png");
+}
+
+.secao#tres {
+    background-image: url("/img/3.png");
+}
+
+.secao#quatro {
+    background-image: url("/img/4.png");
+}
+
+.secao#cinco {
+    background-image: url("/img/5.png");
+}
+
+.secao#seis {
+    background-image: url("/img/6.png");
+}
+
+.secao#sete {
+    background-image: url("/img/sobre.png");
+}
+
+.sombreado {
+    width: 200px;
+    height: 50px;
+    opacity: 75%;
+    justify-content: center;
+    display: flex;
+    position: relative;
+    top: 150px;
+}
+
+.sombreado#um {
+    background-color: #032DFC;
+}
+
+.sombreado#dois {
+    background-color: #1DB933;
+}
+
+.sombreado#tres {
+    background-color: #7D0094;
+}
+
+.sombreado#quatro {
+    background-color: #BA3748;
+}
+
+.sombreado#cinco {
+    background-color: #323438;
+}
+
+.sombreado#seis {
+    background-color: #CE7E19;
+}
+
+.sombreado#sete {
+    background-color: #1F1590;
 }
 
