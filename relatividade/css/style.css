@@ -76,32 +76,32 @@ header {
 }
 
 .secao#um {
-    background-image: url("/img/1.png");
+    background-image: url("img/1.png");
 }
 
 .secao#dois {
-    background-image: url("/img/2.png");
+    background-image: url("img/2.png");
 }
 
 .secao#tres {
-    background-image: url("/img/3.png");
+    background-image: url("img/3.png");
     background-size: cover;
 }
 
 .secao#quatro {
-    background-image: url("/img/4.png");
+    background-image: url("img/4.png");
 }
 
 .secao#cinco {
-    background-image: url("/img/5.png");
+    background-image: url("img/5.png");
 }
 
 .secao#seis {
-    background-image: url("/img/6.png");
+    background-image: url("img/6.png");
 }
 
 .secao#sete {
-    background-image: url("/img/sobre.png");
+    background-image: url("img/sobre.png");
 }
 
 .sombreado {
