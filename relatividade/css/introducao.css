@@ -99,3 +99,41 @@ header {
     align-self: center;
     margin-left: -3%;
 }
+
+footer {
+    margin: 0 auto;
+    width: 60%;
+    margin-top: 2%;
+    display: flex;
+}
+
+.nav1 {
+    width: 50%;
+    background-color: #FFFFFF;
+    margin-right: 1%;
+    display: flex;
+}
+
+.nav2 {
+    width: 50%;
+    background-color: #1db933;
+    display: flex;
+    margin-right: 0;
+}
+
+.foward {
+    margin: 0 auto;
+}
+
+.arrows {
+    height: 60%;
+    align-self: center;
+    padding-right: 2%;
+    padding-left: 2%;
+}
+
+
+.home {
+    color: #c70707;
+    margin: 0 auto;
+}
