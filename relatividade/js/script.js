@@ -1,38 +1,23 @@
-let toggleNavStatus = false;
+var acc = document.getElementsByClassName("accordion");
+var i;
 
-let getSidebar = document.querySelector('.nav-sidebar');
-let getSidebarUl = document.querySelector('.nav-sidebar ul');
-let getSidebarLinks = document.querySelector('.nav-sidebar a');
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    /* Toggle between adding and removing the "active" class,
+    to highlight the button that controls the panel */
+    this.classList.toggle("active");
 
-getSidebar.style.width = "0px";
-getSidebar.style.backgroundColor = "#ffff";
-
-getSidebarUl.style.visibility = "hidden";
-
-let toggleNav = function() {
-    
-    if(toggleNavStatus === false) {
-        getSidebarUl.style.visibility = "visible";
-        getSidebar.style.width = "272px";
-        getSidebar.style.backgroundColor = "#1b1b1b";
-
-        let arrayLength = getSidebarLinks.length;
-        
-        for(let i = 0; i < arrayLength; i++ ) {
-            getSidebarLinks[i].style.opacity = "1";
-        }
-
-        toggleNavStatus = true;
-     } else if(toggleNavStatus === true) {
-        getSidebar.style.width = "0px";
-        getSidebar.style.backgroundColor = "#ffff";
-
-        let arrayLength = getSidebarLinks.length;
-        for(let i = 0; i < arrayLength; i++ ) {
-            getSidebarLinks[i].style.opacity = "0";
-        }
-        
-        getSidebarUl.style.visibility = "hidden";
-        toggleNavStatus = false;
-     }
+    /* Toggle between hiding and showing the active panel */
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+    if (panel.style.maxHeight) {
+        panel.style.maxHeight = null;
+      } else {
+        panel.style.maxHeight = panel.scrollHeight + "px";
+      }
+  });
 }

@@ -45,18 +45,6 @@ h3 {
     justify-content: center;
 }
 
-.uff {
-    width: 30%;
-    margin-right: 5%;
-}
-
-.if {
-    width: 40%;
-    height: fit-content;
-    align-self: center;
-
-}
-
 article {
     width: 60%;
     margin: 0 auto;
@@ -70,9 +58,114 @@ article {
     background-color: #FFFFFF;
 }
 
+.motivacao {
+    width: 100%;
+    height: auto;
+    background-color: #0B1224
+}
+
+.tituloUm {
+    color: #00D1FF;
+    font-weight: normal;
+    text-align: center;
+    font-size: 1.7em;
+}
+
+.tituloDois {
+    color: #1F1590;
+    font-weight: normal;
+    text-align: center;
+    font-size: 1.7em;
+}
+
+.textoClaro {
+    color: #FFFFFF;
+}
+
+.primeiraLei {
+    width: 100%;
+    background-image: url(../img/primeiraLei.png);
+    background-size: contain;
+}
+
+.coluna1 {
+    width: 50%;
+    padding-right: 2%;
+}
+
+.coluna2 {
+    width: 50%;
+}
+
+.formulaNewton {
+    width: 50%;
+    margin-left: 20%;
+}
+
+.leiGravitacao {
+    width: 100%;
+    
+}
+
+/* Style the buttons that are used to open and close the accordion panel */
+.accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    font-size: medium;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    line-height: 1.8;
+}
+  
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .accordion:hover {
+    background-color: #ccc;
+  }
+  
+/* Style the accordion panel. Note: hidden by default */
+.panel {
+    padding: 0 18px;
+    background-color: white;
+    display: none;
+    overflow: hidden;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+
+.accordion:after {
+    content: '\02795'; /* Unicode character for "plus" sign (+) */
+    font-size: 13px;
+    color: #777;
+    float: right;
+    margin-left: 5px;
+  }
+  
+.active:after {
+    content: "\2796"; /* Unicode character for "minus" sign (-) */
+}
+
+.questao {
+    margin-bottom: 3%;
+}
+
+.citacao {
+    width: 100%;
+    background-color: #A1C7FF;
+}
+
+.balao {
+    width: 100%;
+}
+
 a {
     text-decoration: none;
-    color: #032DFC;
+    color: #3255ff;
 }
 
 header {
@@ -105,6 +198,7 @@ footer {
     width: 60%;
     margin-top: 2%;
     display: flex;
+    margin-bottom: 2%;
 }
 
 .nav1 {
