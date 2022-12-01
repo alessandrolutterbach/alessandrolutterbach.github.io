@@ -148,6 +148,10 @@ article {
     margin-left: 7.5%;
 }
 
+.balao1 {
+    margin-left: 35%;
+}
+
 .principio {
     width: 100%;
     background-image: url(../img/universe.png);
@@ -165,6 +169,14 @@ article {
 .img2 {
     width: 97%;
     margin-left: 2.7%;
+}
+
+.destaque {
+    color: #B373BF;
+}
+
+.time {
+    margin-left: 25%;
 }
 
 
