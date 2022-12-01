@@ -28,6 +28,12 @@ h3 {
     align-self: center;
 }
 
+h2 {
+    text-align: center;
+    color: #7D0094;
+    font-weight: normal;
+}
+
 .button {
     background-image: url(../icons/back-button.png);
     background-size: cover;
@@ -45,17 +51,6 @@ h3 {
     justify-content: center;
 }
 
-.uff {
-    width: 30%;
-    margin-right: 5%;
-}
-
-.if {
-    width: 40%;
-    height: fit-content;
-    align-self: center;
-
-}
 
 article {
     width: 60%;
@@ -70,9 +65,112 @@ article {
     background-color: #FFFFFF;
 }
 
+.passos {
+    width: 100%;
+    background-color: #E9C1F0;
+}
+
+.foots {
+    width: 120%;
+}
+
+.universalidade {
+    background-color: #140716;
+}
+
+.h2claro {
+    color: #B373BF;
+}
+
+.pclaro {
+    color: #FFFFFF;
+}
+
+/* Style the buttons that are used to open and close the accordion panel */
+.accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    font-size: medium;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    line-height: 1.8;
+}
+  
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .accordion:hover {
+    background-color: #ccc;
+  }
+  
+/* Style the accordion panel. Note: hidden by default */
+.panel {
+    padding: 0 18px;
+    background-color: rgb(236, 236, 236);
+    display: none;
+    overflow: hidden;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+
+.accordion:after {
+    content: '\02795'; /* Unicode character for "plus" sign (+) */
+    font-size: 13px;
+    color: #777;
+    float: right;
+    margin-left: 5px;
+  }
+  
+.active:after {
+    content: "\2796"; /* Unicode character for "minus" sign (-) */
+}
+
+.questao {
+    margin-bottom: 3%;
+}
+
+.questao1 {
+    width: 60%;
+    margin-left: 20%;
+}
+
+.questao2 {
+    width: 90%;
+    margin: 2%;
+}
+
+.balao {
+    width: 80%;
+    margin-left: 7.5%;
+}
+
+.principio {
+    width: 100%;
+    background-image: url(../img/universe.png);
+    background-size: cover;
+}
+
+.coluna1 , .coluna2 {
+    width: 50%;
+}
+
+.img1 {
+    width:100%;
+}
+
+.img2 {
+    width: 97%;
+    margin-left: 2.7%;
+}
+
+
 a {
     text-decoration: none;
-    color: #032DFC;
+    color: #7D0094;
 }
 
 header {
@@ -105,6 +203,7 @@ footer {
     width: 60%;
     margin-top: 2%;
     display: flex;
+    margin-bottom: 2%;
 }
 
 .nav1 {
