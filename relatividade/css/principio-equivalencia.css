@@ -29,9 +29,10 @@ h3 {
 }
 
 h2 {
-    text-align: center;
     color: #7D0094;
     font-weight: normal;
+    text-align: center;
+    font-size: 1.7em;
 }
 
 .button {
@@ -195,7 +196,7 @@ header {
 
 .titulo {
     width: 80%;
-    height: 60%;
+    height: 65%;
     background-color: #7D0094;
     display: flex;
     align-self: center;
@@ -208,6 +209,14 @@ header {
     z-index: 0;
     align-self: center;
     margin-left: -3%;
+}
+
+.eq {
+    width: 15%;
+}
+
+.eq1 {
+    width: 30%;
 }
 
 footer {

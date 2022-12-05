@@ -70,6 +70,15 @@ article {
     background-color: #FFFFFF;
 }
 
+.cinza {
+    background-color: #707070;
+}
+
+.balao {
+    width: 80%;
+    margin-left: 7.5%;
+}
+
 a {
     text-decoration: none;
     color: #032DFC;
@@ -85,7 +94,7 @@ header {
 
 .titulo {
     width: 80%;
-    height: 60%;
+    height: 65%;
     background-color: #323438;
     display: flex;
     align-self: center;
@@ -104,6 +113,7 @@ footer {
     margin: 0 auto;
     width: 60%;
     margin-top: 2%;
+    margin-bottom: 2%;
     display: flex;
 }
 

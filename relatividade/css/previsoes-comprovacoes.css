@@ -20,6 +20,13 @@ h1 {
     justify-self: right;
 }
 
+h2 {
+    color: #CE7E19;
+    text-align: center;
+    font-weight: normal;
+    font-size: 1.7em;
+}
+
 h3 {
     color: #FFFFFF;
     font-size: 15px;
@@ -37,23 +44,6 @@ h3 {
     justify-self: left;
     margin-left: 3%;
     margin-right: 3%;
-
-}
-
-.logo {
-    display: flex;
-    justify-content: center;
-}
-
-.uff {
-    width: 30%;
-    margin-right: 5%;
-}
-
-.if {
-    width: 40%;
-    height: fit-content;
-    align-self: center;
 
 }
 
@@ -85,7 +75,7 @@ header {
 
 .titulo {
     width: 80%;
-    height: 60%;
+    height: 65%;
     background-color: #CE7E19;
     display: flex;
     align-self: center;
@@ -104,6 +94,7 @@ footer {
     margin: 0 auto;
     width: 60%;
     margin-top: 2%;
+    margin-bottom: 2%;
     display: flex;
 }
 

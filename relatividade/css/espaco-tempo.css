@@ -20,6 +20,46 @@ h1 {
     justify-self: right;
 }
 
+h2 {
+    color: #1db933;
+    font-weight: normal;
+    text-align: center;
+    font-size: 1.7em;
+}
+
+.h2claro {
+    color: #115131;
+}
+
+.pclaro {
+    color: #FFFFFF;
+}
+
+.vs {
+    font-size: 300%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+
+.luz {
+    width: 75%;
+    margin-left: 27%;
+}
+
+.eq {
+    width: 15%;
+    margin-left: 40%;
+}
+
+.citacao {
+    background-color: #abf0b4;
+}
+
+.balao {
+    width: 80%;
+    margin-left: 7.5%;
+}
+
 h3 {
     color: #FFFFFF;
     font-size: 15px;
@@ -45,16 +85,13 @@ h3 {
     justify-content: center;
 }
 
-.uff {
-    width: 30%;
-    margin-right: 5%;
+.verdeclaro {
+    background-color: #5fc16c;
 }
 
-.if {
-    width: 40%;
-    height: fit-content;
-    align-self: center;
-
+.carros {
+    width: 80%;
+    margin-left: 10%;
 }
 
 article {
@@ -72,7 +109,7 @@ article {
 
 a {
     text-decoration: none;
-    color: #032DFC;
+    color: #1db933;
 }
 
 header {
@@ -85,7 +122,7 @@ header {
 
 .titulo {
     width: 80%;
-    height: 60%;
+    height: 65%;
     background-color: #1db933;
     display: flex;
     align-self: center;

@@ -191,7 +191,7 @@ header {
 
 .titulo {
     width: 80%;
-    height: 60%;
+    height: 65%;
     background-color: #032DFC;
     display: flex;
     align-self: center;
@@ -204,6 +204,10 @@ header {
     z-index: 0;
     align-self: center;
     margin-left: -3%;
+}
+
+.eq {
+    width: 15%;
 }
 
 footer {
