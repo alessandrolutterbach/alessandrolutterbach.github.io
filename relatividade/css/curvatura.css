@@ -47,13 +47,81 @@ h3 {
 
 }
 
-.logo {
-    display: flex;
-    justify-content: center;
+.coluna1 {
+    width: 70%;
+    padding-right: 7.5%;
+}
+
+.coluna2 {
+    width: 100%;
+}
+
+.coluna3{
+    width: 100%;
+}
+
+.coluna4{
+    width: 70%;
+    padding-left: 7.5%;
+}
+
+.aclaro {
+    color: #f9909e;
+}
+
+/* Style the buttons that are used to open and close the accordion panel */
+.accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    font-size: medium;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    line-height: 1.8;
+}
+  
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .accordion:hover {
+    background-color: #ccc;
+  }
+  
+/* Style the accordion panel. Note: hidden by default */
+.panel {
+    padding: 0 18px;
+    background-color: rgb(236, 236, 236);
+    display: none;
+    overflow: hidden;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+
+.accordion:after {
+    content: '\02795'; /* Unicode character for "plus" sign (+) */
+    font-size: 13px;
+    color: #777;
+    float: right;
+    margin-left: 5px;
+  }
+  
+.active:after {
+    content: "\2796"; /* Unicode character for "minus" sign (-) */
 }
 
 .rosa {
-    background-color: #ffb6c0;
+    background-color: #69212b;
+}
+
+.rosaclaro {
+    background-color: #e5b9be;
+}
+
+.pclaro {
+    color: #FFFFFF;
 }
 
 article {
@@ -71,7 +139,7 @@ article {
 
 a {
     text-decoration: none;
-    color: #032DFC;
+    color: #ba3748;
 }
 
 header {

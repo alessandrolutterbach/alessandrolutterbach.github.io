@@ -43,7 +43,7 @@ h2 {
 
 .luz {
     width: 75%;
-    margin-left: 27%;
+    margin-left: 22%;
 }
 
 .eq {
@@ -80,18 +80,48 @@ h3 {
 
 }
 
-.logo {
-    display: flex;
-    justify-content: center;
-}
-
 .verdeclaro {
-    background-color: #5fc16c;
+    background-color: #5fa167;
 }
 
 .carros {
-    width: 80%;
-    margin-left: 10%;
+    width: 65%;
+    margin-left: 17%;
+}
+
+.branco {
+    background-color: #FFFFFF;
+    padding: 2%;
+}
+
+.simul {
+    background-color: #fffdd0;
+}
+
+.dilatacao {
+    background-color: #ffcdf9;
+}
+
+.distorcao {
+    background-color: #c8d1ff;
+}
+
+.inicio {
+    background-color: #c8f3c8;
+}
+
+.important {
+    color: #1db933;
+    font-size: x-large;
+}
+
+.trem1{
+    width: 75%;
+    margin-left: 12.5%;
+}
+
+.trem2 {
+    width: 100%;
 }
 
 article {
