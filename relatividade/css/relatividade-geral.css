@@ -40,23 +40,6 @@ h3 {
 
 }
 
-.logo {
-    display: flex;
-    justify-content: center;
-}
-
-.uff {
-    width: 30%;
-    margin-right: 5%;
-}
-
-.if {
-    width: 40%;
-    height: fit-content;
-    align-self: center;
-
-}
-
 article {
     width: 60%;
     margin: 0 auto;
@@ -70,8 +53,15 @@ article {
     background-color: #FFFFFF;
 }
 
-.cinza {
-    background-color: #707070;
+.citacao {
+    background-color: #fcce97;
+}
+
+h2 {
+    color: #CE7E19;
+    font-weight: normal;
+    text-align: center;
+    font-size: 1.7em;
 }
 
 .balao {
