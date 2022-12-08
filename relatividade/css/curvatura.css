@@ -189,6 +189,11 @@ footer {
     margin-right: 0;
 }
 
+.mare{
+    width: 60%;
+    margin-left: 20%;
+}
+
 .arrows {
     height: 60%;
     align-self: center;
