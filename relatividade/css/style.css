@@ -97,10 +97,6 @@ header {
 }
 
 .secao#seis {
-    background-image: url("../img/6.png");
-}
-
-.secao#sete {
     background-image: url("../img/sobre.png");
 }
 
@@ -131,13 +127,9 @@ header {
 }
 
 .sombreado#cinco {
-    background-color: rgba(50,52,56,.75);
-}
-
-.sombreado#seis {
     background-color: rgba(206,126,25,.75);
 }
 
-.sombreado#sete {
+.sombreado#seis {
     background-color: rgba(31,21,144,.75);
 }

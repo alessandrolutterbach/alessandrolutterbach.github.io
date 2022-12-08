@@ -100,7 +100,7 @@ header {
 .titulo {
     width: 80%;
     height: 65%;
-    background-color: #323438;
+    background-color: #CE7E19;
     display: flex;
     align-self: center;
     z-index: 1;
@@ -131,7 +131,7 @@ footer {
 
 .nav2 {
     width: 50%;
-    background-color: #CE7E19;
+    background-color:rgb(31,21,144);
     display: flex;
     margin-right: 0;
 }
