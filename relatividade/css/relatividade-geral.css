@@ -64,6 +64,16 @@ h2 {
     font-size: 1.7em;
 }
 
+.preto {
+    background-color: #000000;
+}
+
+.pclaro {
+    color: #FFFFFF;
+    text-align: center;
+    font-size: large;
+}
+
 .balao {
     width: 80%;
     margin-left: 7.5%;
@@ -72,6 +82,11 @@ h2 {
 .rg {
     width: 80%;
     margin-left: 10%;
+}
+
+.rg2 {
+    width: 50%;
+    margin-left: 25%;
 }
 
 a {
