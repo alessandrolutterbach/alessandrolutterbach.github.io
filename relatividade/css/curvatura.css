@@ -124,6 +124,26 @@ h3 {
     color: #FFFFFF;
 }
 
+.mare{
+    width: 60%;
+    margin-left: 20%;
+}
+
+.curvatura1 {
+    width: 80%;
+    margin-left: 8%;
+}
+
+.curvatura2 {
+    width: 60%;
+    margin-left: 20%;
+}
+
+.geodesicas {
+    width: 40%;
+    margin-left: 30%;
+}
+
 article {
     width: 60%;
     margin: 0 auto;
@@ -187,11 +207,6 @@ footer {
     background-color: #CE7E19;
     display: flex;
     margin-right: 0;
-}
-
-.mare{
-    width: 60%;
-    margin-left: 20%;
 }
 
 .arrows {

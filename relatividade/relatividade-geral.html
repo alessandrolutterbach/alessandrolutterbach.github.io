@@ -8,6 +8,12 @@
     <link rel="stylesheet" type="text/css" href="css/relatividade-geral.css" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Krona One|Roboto|Ubuntu">
     <link rel="icon" type="image/x-icon" href="icons/5.png">
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+      </script>
+      <script type="text/javascript"
+        src="http://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+      </script>
     <style>
         h1, h3 {font-family: "Krona One", sans-serif;}
         p, a {font-family: "Roboto", sans-serif;}
@@ -51,8 +57,15 @@
         <div class="fundo">
             <article>
                 <h2>Mas, afinal, onde a Teoria da Relatividade Geral é importante?</h2>
-                <h2>Ondas Gravitacionais</h2>
-                <h2>Buracos Negros</h2>
+                <p> Uma forma de julgar quão importantes são as correções da Relatividade Geral a uma certa situação física é calculando a quantidade $\epsilon = GM/(Rc^2)$, onde $M$ é a massa característica do sistema e $R$ é seu tamanho característico. Essa é um número (adimensional!) que, quando pequeno, indica que a descrição Newtoniana é adequada; quando grande (próximo de 1), indica que as correções relativísticas são importantes.</p> 
+                    
+                <p>Por exemplo, para um satélite em órbita ao redor da Terra, tomamos $M \approx 6 \times 10^{24}$ kg (massa da Terra) e $R \approx$ 42 mil km (raio da órbita), chegando a $\epsilon \approx 0.0000000001$. Esse número é extremamente pequeno, mas, como vimos, tem efeitos observáveis no funcionamento de instrumentos de precisão como o GPS.</p>
+                    
+                <p>Já no caso da órbita de Mercúrio em torno do Sol, podemos tomar $M \approx 2 \times 10^{30}$ kg (massa do Sol) e $R \approx$ 50 milhões de km (raio médio da órbita), chegando a $\epsilon \approx 0.00000003$. Esse número é maior que o anterior, mas ainda muito pequeno! Ainda assim, correções relativísticas na órbita de Mercúrio são observadas há mais de um século!</p>
+                    
+                <p>Saindo do sistema solar, encontramos objetos mais "relativísticos": estrelas com a massa parecida com a do Sol, mas muito menores. Por exemplo, o raio de anãs brancas é $R \approx 7000$ km, e temos $\epsilon \approx 0.0002$. Para estrelas de nêutrons, com raio de cerca de 10 km e massa comparável à do Sol, $\epsilon \approx 0.2$! </p>
+                    
+                <p>A Relatividade Geral prevê a existência de astros ainda mais compactos, os buracos negros, com $\epsilon \approx 0.5$.</p>
             </article>
         </div>
         <footer>
@@ -63,6 +76,6 @@
     </main>
 </body>
 
-<script src="relatividade/js/script.js"></script>
+<script src="js/script.js"></script>
 
 </html>

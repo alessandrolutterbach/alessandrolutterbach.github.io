@@ -71,8 +71,13 @@ article {
     background-color: #E9C1F0;
 }
 
+.col1 {
+    width: 75%;
+}
+
 .foots {
-    width: 120%;
+    width: 90%;
+    margin-left: 15%;
 }
 
 .universalidade {
@@ -157,6 +162,16 @@ article {
     width: 100%;
     background-image: url(../img/universe.png);
     background-size: cover;
+}
+
+.gps {
+    width: 50%;
+    margin-left: 23%;
+}
+
+.desvio {
+    width: 95%;
+    margin-left: 2.5%;
 }
 
 .coluna1 , .coluna2 {
