@@ -80,6 +80,21 @@ article {
     margin-left: 15%;
 }
 
+.left {
+    width: 65%;
+}
+
+.sobral {
+    width: 85%;
+    margin-left: 7.5%;
+}
+
+.deep {
+    width: 50%;
+    margin-left: 25%;
+    margin-bottom: 2%;
+}
+
 .universalidade {
     background-color: #140716;
 }

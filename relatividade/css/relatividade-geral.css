@@ -74,6 +74,10 @@ h2 {
     font-size: large;
 }
 
+.claro {
+    color: #FFFFFF;
+}
+
 .balao {
     width: 80%;
     margin-left: 7.5%;
@@ -92,6 +96,24 @@ h2 {
 a {
     text-decoration: none;
     color: #CE7E19;
+}
+
+.text {
+    width: 75%;
+    padding-right: 2%;
+}
+
+.text2 {
+    width: 75%;
+    padding-left: 2%;
+}
+
+.bn {
+    margin-left: 5%;
+}
+
+.coluna1 {
+    width: 50%;
 }
 
 header {
