@@ -172,3 +172,59 @@ footer {
 .foward {
     margin: 0 auto;
 }
+
+@media (max-width: 480px) {
+    main {
+        width: 100%;
+    }
+
+    header {
+        width: 90%;
+        height: 150px;
+        display: flex;
+    }
+
+    article {
+        width: 90%;
+    }
+
+    .titulo {
+        width: 80%;
+        height: 45%;
+    }
+
+    .imagemHeader {
+        width: 100px;
+        height: 100px;
+    }
+
+    h1 {
+        font-size: 4.5vw;
+    }
+
+    .balao {
+        width: 100%;
+        margin: auto;
+    }
+
+
+    .eq {
+        width: auto;
+    }
+
+
+    .nav1, .nav2 {
+        display: flex;
+        width: 100%;
+        margin-bottom: 2%;
+    }
+
+    footer {
+        display: block;
+        width: 95%;
+    }
+
+    .arrows {
+        width: 10%;
+    }
+}

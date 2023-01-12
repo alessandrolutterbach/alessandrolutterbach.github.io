@@ -285,3 +285,100 @@ footer {
 .foward {
     margin: 0 auto;
 }
+
+@media (max-width: 480px) {
+    main {
+        width: 100%;
+    }
+
+    header {
+        width: 90%;
+        height: 150px;
+        display: flex;
+    }
+
+    article {
+        width: 90%;
+    }
+
+    iframe {
+        height: 30vh;
+    }
+
+    .titulo {
+        width: 80%;
+        height: 45%;
+    }
+
+    .imagemHeader {
+        width: 100px;
+        height: 100px;
+    }
+
+    h1 {
+        font-size: 4.5vw;
+    }
+
+    .col1, .col2 {
+        display: block;
+        width: 100%;
+    }
+
+    .coluna1, .coluna2 {
+        width: 100%;
+        margin: auto;
+    }
+
+    .time {
+        width: 100%;
+        margin: auto;
+    }
+
+    td {
+        display: block;
+    }
+
+    .foots {
+        width: 65%;
+        margin: 15%;
+    }
+
+    .gps, .deep, .desvio {
+        width: 100%;
+        margin: auto;
+    }
+
+    .left {
+        width: 100%;
+    }
+
+    .balao {
+        width: 100%;
+        margin: auto;
+    }
+
+
+    .eq {
+        width: auto;
+    }
+
+    .eq1 {
+        width: 95%;
+    }
+
+
+    .nav1, .nav2 {
+        display: flex;
+        width: 100%;
+        margin-bottom: 2%;
+    }
+
+    footer {
+        display: block;
+        width: 95%;
+    }
+
+    .arrows {
+        width: 10%;
+    }
+}

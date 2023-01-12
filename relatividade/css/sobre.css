@@ -99,3 +99,37 @@ header {
     align-self: center;
     margin-left: -3%;
 }
+
+@media (max-width: 480px) {
+    main {
+        width: 100%;
+    }
+
+    header {
+        width: 90%;
+        height: 150px;
+        display: flex;
+    }
+
+    article {
+        width: 90%;
+    }
+    .titulo {
+        width: 80%;
+        height: 45%;
+    }
+
+    .imagemHeader {
+        width: 100px;
+        height: 100px;
+    }
+
+    h1 {
+        font-size: 4.5vw;
+    }
+
+    .logo {
+        width: 100%;
+        margin: auto;
+    }
+}
