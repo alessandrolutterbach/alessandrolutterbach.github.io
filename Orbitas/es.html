@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,  user-scalable=no">
+    <title>Órbitas Relativísticas</title>
+    <link rel="icon" type="image/x-icon" href="img/meteorite.png">
+    <link rel="stylesheet" type="text/css" href="css/es.css" media="screen"/>
+    <link rel="stylesheet" type="text/css" href="css/light.css" media="screen"/>
+    <link rel="stylesheet" href="https://pyscript.net/latest/pyscript.css" />
+    <script defer src="https://pyscript.net/latest/pyscript.js"></script>
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+      </script>
+      <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+      </script>
+</head>
+<body onload="init()">
+    <div class="top"></div>
+    <button class="dark" id="lightbuttom" onclick="change()"><img class="lightbulb" src="img/lightbulb_black_24dp.svg"></svg></button>
+    <header>
+        <h1>ÓRBITAS<br>RELATIVÍSTICAS</h1>
+    </header>
+    <main class="back">
+        <article>
+            <nav>
+                <a class="link" href="#" onclick="return show('one','two','three','um')">
+                    <img id='um' class="link" src="img/text-box-outline.svg">
+                    <p class="link" id="um"> Introdução</p>
+                </a>
+                <a class="link" href="#" onclick="return show('two','one','three','dois')">
+                    <img class="link" id="dois" src="img/public_black_24dp.svg">
+                    <p class="link" id="dois"> Corpos Massivos</p>
+                </a>
+                <a class="link" href="#" onclick="return show('three','one','two','tres')">
+                    <img class="link" id="tres" src="img/wb_sunny_black_24dp.svg">
+                    <p class="link" id="tres"> Raios de Luz</p>
+                </a>
+            </nav>
+            
+            <div class="introducao" id="one" style="display: block;">
+                <h3>Órbitas de corpos massivos</h3>
+                <h4>Caso newtoniano</h4>
+                <p>De acordo com a lei da gravitação universal de Newton, o campo gravitacional externo a um corpo esférico de massa $M$ (situado na origem do sistema de coordenadas) é
+                    $$
+                    \vec{g} = - \frac{GM}{r^2} \hat{r} \qquad \qquad 
+                    $$
+                onde $G = 6,67  •  10^{-11} m^3 kg^{-1} s^{-2}$ é a constante da gravitação universal e $r$ é a distância ao corpo central.
+                </p>
+                <p>Uma partícula de massa $m$ sujeita a esse campo gravitacional descreve uma trajetória que é restrita a um plano e pode ser descrita pelas fuções $r(t)$ e $θ(t)$, que satisfazem
+                    $$
+                    \frac{m}{2} \left(\frac{dr}{dt}\right)^2 + U_{efetiva} = E \qquad \qquad 
+                    $$
+                e
+                    $$
+                    \frac{d\theta}{dt} = \frac{L}{mr^2} \qquad \qquad 
+                    $$
+                </p>
+                <p> Aqui, $L$ é o módulo do momento angular, $E$ é a energia total e a energia potencial efetiva $U_{efetiva}$ é dada por
+                    $$
+                    U_{efetiva} = -\frac{GMm}{r} + \frac{L^2}{2 m r^2} \qquad \qquad
+                    $$
+                </p>
+                <h4>Caso Relativístico</h4>
+                <p>A relatividade geral é a teoria atual que melhor descreve os fenômenos gravitacionais. Nessa teoria, a gravitação é descrita como resultado da curvatura do espaço-tempo. Uma das soluções mais simples, descrevendo a geometria do espaço-tempo externa a um corpo esférico, estático, de massa $M$ é a chamada solução de Schwarzschild. Partículas que orbitam o corpo central seguem trajetórias que também podem ser descritas pela equação (2), mas com a nova energia potencial efetiva:
+                    $$
+                    U_{efetiva}^{(R)} = - \frac{GMm}{r} + \frac{L^2}{2 m r^2} - \frac{GML^2}{m c^2 r^3} \qquad \qquad 
+                    $$
+                </p>
+                <h3>Órbitas de raios de luz</h3>
+                <p>Um raio de luz, no espaço-tempo de Schwarzschild, descreve uma trajetória que também pode ser escrita na forma de um problema unidimensional efetivo. Temos:
+                    $$
+                    \frac{1}{\ell^2} \left(\frac{dr}{d\lambda}\right)^2 + V_{efetivo} = \frac{1}{d^2} \qquad \qquad
+                    $$
+                com o potencial efetivo
+                    $$
+                    V_{efetivo} = \frac{1}{r^2} \left( 1 - \frac{r_g}{r} \right) \qquad \qquad
+                    $$
+                </p>
+                <p>
+                    Aqui, $r_g = 2GM/c^2$ depende da massa do corpo central.
+                </p>
+                <p>Nesse caso, o que cumpre o papel do parâmetro de 'energia' é o fator $1/d^2$, onde $d$ é o parâmetro de impacto do fóton, que pode ser obtido a partir da sua energia $e$ e momento angular $\ell$ como $d = c |\ell/e|$. Para entender o que d representa, considere um raio de luz que vem do infinito, se movendo paralelamente ao eixo $x$: o parâmetro de impacto $d$ é justamente a distância ao eixo-$x$, como mostra a figura abaixo.</p>
+                <img class="parametro" src="img/parametro.png">
+                <h3>Próximos passos</h3>
+                <p>Este simulador se destina ao estudo de órbitas relativísticas. Nele você pode simular o potencial efetivo e esboço de órbitas de corpos massivos e/ou raios de luz. Basta ir ao menu na parte superior desta página e escolher a partícula a ser analisada. Bom estudo!</p>
+
+            </div>
+
+            <div class="corposmassivos" id="two" style="display:none">
+                <h3>Simulador para análise das órbitas relativísticas de corpos com massa</h3>
+                <h4>Funcionamento do programa:</h4>
+                <p>Seguindo os comandos abaixo, você deverá, primeiramente, inserir o valor do momento angular adimensional $Lc/(GMm)$. Em seguida, o programa exibirá o gráfico da energia potencial efetiva (adimensional): $U_{eff}^{(R)}/(mc^2)$. Você deverá então inserir o valor do parâmetro de energia da partícula teste, $E = E/(mc^2)$, que pode assumir qualquer valor maior que o mínimo de $U_{eff}^{(R)}$. O programa então retornará um gráfico correspondente à trajetória da partícula com esses parâmetros de energia e momento angular, para um corpo central ultracompacto com massa igual à do Sol.</p>
+                <py-config>
+                    packages = ["matplotlib", "numpy", "sympy", "scipy"]
+                    terminal = false
+                </py-config>
+                <py-script src="py/es.py"></py-script>
+                <div class="input">
+                    <h4>Insira o valor do momento angular adimensional:</h4>
+                    <p>Escolha entre 0 e 15:</p>
+                    <input type="range" value="0.0" min="0.0" max="15.0" step="0.1" style="width: 100%;" oninput="rangevalue.value=value"/>
+                    <div class="value">
+                        <p class="inicial">0.0</p>
+                        <output id="rangevalue">0.0</output>
+                        <p class="final">15.0</p>  
+                    </div>
+                    <button class="click" id="click1" onclick="return limpaDiv('parte2')" py-click="gerarPotencial1()">Gerar Potencial</button>
+                </div>
+                <div class="graf1" id="graph"></div>
+                <div id="parte2" style="display: none;">
+                    <div class="input">
+                        <h4>Agora, insira o valor do parâmetro de energia:</h4>
+                        <p>Escolha um valor maior que o mínimo da energia potencial efetiva; calculada no passo anteior</p>
+                        <input type="number" step="0.00001" value="0.00000" class="css-input" id="number"/>
+                        <h4>E insira o número de voltas completas na órbita:</h4>
+                        <p>Para uma órbita ligada ($U_{eff,min} ≤ E < 0$), escolha também o número de órbitas que deseja traçar:</p>
+                        <p>Escolha entre 1 e 20:</p>
+                        <input type="range" value="1" min="1" max="20" step="1" style="width: 100%;" oninput="rangevalue2.value=value"/>
+                        <div class="value">
+                            <p class="inicial">1</p>
+                            <output id="rangevalue2">1</output>
+                            <p class="final">20</p>  
+                        </div>
+                        <button class="click" id="click2" onclick="limpaDiv2()" py-click="gerarOrbita1()">Gerar Órbita</button>
+                    </div>
+                    <div class="graf1" id="graph2"></div>
+                </div>
+                <br>
+            </div>
+
+            <div class="raiosdeluz" id="three" style="display:none">
+                <h3>Simulador para análise das órbitas relativísticas de raios de luz</h3>
+                <p> Desta vez, a forma do potencial é fixa e está ilustrada abaixo. O máximo do potencial efetivo ocorre para $r = 1.5 r_g$.</p>
+                <img id="potencialluz" src="img/potencialluz.png" style="width: 100%;">
+                <h4>Funcionamento do programa:</h4>
+                <p>Seguindo os comandos abaixo, você deverá inserir o valor do parâmetro de impacto (em unidades do raio gravitacional do corpo central). Você também pode escolher $d≈2.5981$, o valor do parâmetro de impacto crítico ($d=(V_{max})^{-1/2}$). O programa então retornará um gráfico correspondente à trajetória da partícula com esse parâmetro de impacto. Você pode tanto explorar uma faixa definida de valores de  $d$, quanto inserir o valor desejado diretamente.</p>
+                <div class="input">
+                    <h4>Escolha o valor do parâmetro de impacto $d$, em unidades de $r_g$:</h4>
+                    <p>Escolha entre 0 e 20:</p>
+                    <input type="range" value="0.0" min="0.0" max="20.0" step="0.1" style="width: 100%;" oninput="rangevalue3.value=value"/>
+                    <div class="value">
+                        <p class="inicial">0.0</p>
+                        <output id="rangevalue3">0.0</output>
+                        <p class="final">20.0</p>  
+                    </div>
+                    <button class="click" id="click2" onclick="limpaDiv3()" py-click="gerarOrbita2(1)">Gerar Órbita</button>
+                    <p>Ou insira o valor desejado diretamente:</p>
+                    <input type="number" step="0.0001" value="0.0000" class="css-input" id="number2"/>
+                    <button class="click" id="click3" onclick="limpaDiv3()" py-click="gerarOrbita2(2)" style="margin-top: 3%;">Gerar Órbita</button>
+
+                </div>
+                <div class="graf1" id="graph3"></div>
+            </div>
+
+        </article>
+    </main>
+    <footer>
+        <a class="foot" href="sobre.html"><img class="icon" src="img/info_black_24dp.svg"><p class="foot">Sobre este site</p></a>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>
