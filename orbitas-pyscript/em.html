@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,  user-scalable=no">
+    <title>Órbitas Relativísticas</title>
+    <link rel="icon" type="image/x-icon" href="img/meteorite.png">
+    <link rel="stylesheet" type="text/css" href="css/em.css" media="screen"/>
+    <link rel="stylesheet" type="text/css" href="css/light.css" media="screen"/>
+    <link rel="stylesheet" href="https://pyscript.net/latest/pyscript.css"/>
+    <script defer src="https://pyscript.net/latest/pyscript.js"></script>
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+      </script>
+      <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+      </script>
+      <py-config>
+        packages = ["matplotlib", "numpy", "sympy", "scipy"]
+        terminal = false
+    </py-config>
+</head>
+<body onload="init()">
+    <div class="top"></div>
+    <button class="dark" id="lightbuttom" onclick="change()"><img class="lightbulb" src="img/lightbulb_black_24dp.svg"></svg></button>
+    <header>
+        <h1>ÓRBITAS<br>RELATIVÍSTICAS</h1>
+    </header>
+    <main class="back">
+        <article>
+            <nav>
+                <a class="link" href="#" onclick="return show('one','two','um')">
+                    <img class="link" id="um" src="img/public_black_24dp.svg">
+                    <p class="link" id="um"> Órbitas de corpos celestes</p>
+                </a>
+                <a class="link" href="#" onclick="return show('two','one','dois')">
+                    <img class="link" id="dois" src="img/wb_sunny_black_24dp.svg">
+                    <p class="link" id="dois"> Órbitas de raios de luz</p>
+                </a>
+            </nav>
+            <div class="corposmassivos" id="one" style="display:block">
+                <h3>Corpo celeste orbitando um buraco negro</h3>
+                <h4>E se, de repente, o Sol se transformasse em um buraco negro?</h4>
+                <p>Para isso, toda sua massa, de 2 $\cdot$ 10$^{30}$ kg (hoje espalhada numa esfera com cerca de  700 mil quilômetros de raio), deveria ser comprimida numa região com raio de cerca de  3  km.</p>
+                <img src="img/orbitaceleste.png" style="width: 40%; margin-left: 30%;">
+                <p>O simulador abaixo nos permite explorar a órbita de corpos (planetas, asteroides ou espaço-naves) que se aventurassem nas vizinhanças de um buraco negro com a mesma massa do Sol.</p>
+                <p>Nele você pode alterar (ver figura acima):</p>
+                <ul>
+                    <li><p>A posição inicial do corpo: $x_0$ (em km)</p></li>
+                    <li><p>O módulo da velocidade inicial do corpo: $v_0$</p></li>
+                </ul>
+                <p>Ex.: Com $x_0=15$km e $v_0=0.38c$, obtemos uma órbita quase circular. No simulador abaixo, você pode testar esse e outros parâmetros!</p>
+                <py-script src="py/em.py"></py-script>
+                <div class="input">
+                    <h4>Escolha o valor da posição inicial (em km):</h4>
+                    <p>Escolha entre 3km e 30km:</p>
+                    <input type="range" value="3.0" min="3.0" max="30.0" step="0.10" style="width: 100%;" oninput="rangevalue.value=value"/>
+                    <div class="value">
+                        <p class="inicial">3.0</p>
+                        <output id="rangevalue">3.0</output>
+                        <p class="final">30.0</p>  
+                    </div>
+                    <h4>Escolha o valor da velocidade inicial (em unidades da velocidade da luz):</h4>
+                    <p>Escolha entre 0.01 e 1:</p>
+                    <input type="range" value="0.01" min="0.01" max="1.00" step="0.01" style="width: 100%;" oninput="rangevalue2.value=value"/>
+                    <div class="value">
+                        <p class="inicial">0.01</p>
+                        <output id="rangevalue2">0.01</output>
+                        <p class="final">1.00</p>
+                    </div>
+                    <button class="click" id="click1" py-click="gerarOrbita1()">Gerar Órbita</button>
+                </div>
+                <div class="graf1" id="graph"></div>
+            </div>
+
+            <div class="raiosdeluz" id="two" style="display:none">
+                <h3>Luz orbitando um buraco negro</h3>
+                <p>A teoria da Relatividade Geral de Einstein prevê que a trajetória da luz deve ser defletida quando passa nas vizinhanças de um corpo massivo. O simulador abaixo nos permite explorar a órbita de raios de luz ao redor de um buraco negro com a mesma massa do Sol.</p>
+                <img src="img/orbitaluz.png" style="width: 40%; margin-left: 30%;">
+                <p>Nele, você pode alterar (ver figura acima):</p>
+                <ul>
+                    <li><p>O parâmetro de impacto (em km): $d$</p></li>
+                </ul>
+                <p>Ex.: Por volta de  $d=7.794$km, temos o valor crítico para o parâmetro de impacto. No simulador abaixo, você pode testar esse e outros parâmetros!</p>
+                <div class="input">
+                    <h4>Escolha o valor do parâmetro de impacto $d$ (em km):</h4>
+                    <p>Escolha entre 0.01 e 15:</p>
+                    <input type="range" value="0.01" min="0.01" max="15.00" step="0.01" style="width: 100%;" oninput="rangevalue3.value=value"/>
+                    <div class="value">
+                        <p class="inicial">0.01</p>
+                        <output id="rangevalue3">0.01</output>
+                        <p class="final">15</p>
+                    </div>
+                    <button class="click" id="click2" onclick="return limpaDiv('parte2')" py-click="gerarOrbita2()">Gerar Órbita</button>
+                </div>
+                <div class="graf1" id="graph2"></div>
+            </div>
+
+        </article>
+    </main>
+    <footer>
+        <a class="foot" href="sobre.html"><img class="icon" src="img/info_black_24dp.svg"><p class="foot">Sobre este site</p></a>
+    </footer>
+    <script src="js/script2.js"></script>
+</body>
+</html>

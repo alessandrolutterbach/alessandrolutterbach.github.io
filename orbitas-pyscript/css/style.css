@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
+body {
+    background-color: #0E1118;
+    background-image: radial-gradient(#353549 0.85px, #0E1118 0.85px);
+    background-size: 17px 17px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.dark {
+    position: fixed;
+    top: 1.5%;
+    right: 0.5%;
+    width: 40px;
+    height: 40px;
+    background-color: #181F2F;
+    border-style: solid;
+    border-radius: 6px;
+    border-width: 1px;
+    border-color: #e3e3e3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dark:hover {
+    border-color: #FFC700;
+    background-color: #253048;
+    border-width: 2px;
+}
+
+.lightbulb {
+    filter: invert(99%) sepia(0%) saturate(234%) hue-rotate(31deg) brightness(115%) contrast(78%);
+}
+
+.icons {
+    filter: invert(81%) sepia(19%) saturate(3112%) hue-rotate(357deg) brightness(99%) contrast(106%);
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+}
+
+.icon {
+    filter: invert(81%) sepia(19%) saturate(3112%) hue-rotate(357deg) brightness(99%) contrast(106%);
+    margin-right: 1%;
+}
+
+.menu {
+    display: flex;
+}
+
+.card {
+    width: 300px;
+    height: 260px;
+    background-color: #181F2F;
+    background-image: radial-gradient(#49495f 0.85px, #181F2F 0.85px);
+    background-size: 17px 17px;
+    border-style: solid;
+    border-radius: 6px;
+    border-width: 1.8px;
+    border-color: #e3e3e3;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.card:hover {
+    border-color: #FFC700;
+    background-color: #253048;
+    background-image: radial-gradient(#49495f 0.85px, #253048 0.85px);
+}
+
+#left {
+    margin-right: 5%;
+}
+
+#right {
+    margin-left: 5%;
+}
+
+
+h1 {
+    font-size:72px;
+    text-align: center;
+    color: white;
+    font-weight: normal;
+}
+
+h2 {
+    text-align: left;
+    padding-left: 10%;
+    color: white;
+    font-weight: normal;
+}
+
+p {
+    text-align: center;
+    color: white;
+    font-weight: normal;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:visited {
+    color: white;
+}
+
+strong {
+    color: #FFC700;
+    font-weight: normal;
+}
+
+.foot {
+    display: flex;
+    justify-content: center;
+}
+
+.foot:hover {
+    color: #FFC700;
+}
+
+footer {
+    margin-top: 10%;
+}
+
+@media (max-width: 480px) {
+    .menu {
+        display: block;
+        margin-left: 5%;
+        
+    }
+
+    #left , #right {
+        margin-top: 5%;
+        margin-left: 0%;
+        margin-right: 0%;
+    }
+
+    h1 {
+        margin-top: 25%;
+        font-size: 5vh;
+        margin-bottom: 10%;
+    }
+
+    .dark {
+        top: 1%;
+        right: 2%;
+    }
+}
