@@ -393,7 +393,9 @@ input[type="range"]::-moz-range-thumb {
     .css-input {
         width: 93%;
     }
+}
 
+@media (max-width: 480px) {
     .parametro {
         margin-left: 0%;
         width: 100%;

@@ -2,6 +2,9 @@ function init() {
     if (localStorage.getItem("mode") == "light") {
         light();
     }
+    else {
+        localStorage.setItem("mode", "dark")
+    }
     var element = document.body;
     element.classList.add("selected1");
 }
@@ -9,7 +12,6 @@ function init() {
 function light() {
     var element = document.body;
     element.classList.add("dark-mode");
-    document.getElementById("potencialluz").src="img/potencialluz2.png";
 }
 
 function change() {
@@ -17,10 +19,8 @@ function change() {
     element.classList.toggle("dark-mode");
     if (localStorage.getItem("mode") == "dark") {
         localStorage.setItem("mode", "light");
-        document.getElementById("potencialluz").src="img/potencialluz2.png";
     } else {
         localStorage.setItem("mode", "dark");
-        document.getElementById("potencialluz").src="img/potencialluz.png";
     }
 }
 

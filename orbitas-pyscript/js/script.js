@@ -2,6 +2,9 @@ function init() {
     if (localStorage.getItem("mode") == "light") {
         light();
     }
+    else {
+        localStorage.setItem("mode", "dark")
+    }
     var element = document.body;
     element.classList.add("selected1");
 }
