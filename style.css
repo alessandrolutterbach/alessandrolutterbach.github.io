@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+:root {
+    --font: 'Quicksand', sans-serif;
+    --back: white;
+}
+
+body {
+    font-family: var(--font);
+}
+
+.container {
+    display: flex;
+}
+
+
+#logo {
+    font-size: x-large;
+    font-weight: 600;
+    text-decoration: none;
+    color: black;
+}
+
+#menu {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    border: none;
+    
+}
+
+#menu img {
+    width: 80%;
+}
+
+header, main, footer {
+    margin: auto;
+    width: 60%;
+    display: block;
+    justify-items: center;
+}
