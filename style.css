@@ -1,44 +1,173 @@
-@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
 
 :root {
-    --font: 'Quicksand', sans-serif;
+    --font: 'obviously', sans-serif;
     --back: white;
+    --color: black;
 }
 
 body {
     font-family: var(--font);
+    color: var(--color);
+    background-color: var(--back);
 }
 
-.container {
-    display: flex;
-}
-
-
-#logo {
-    font-size: x-large;
-    font-weight: 600;
-    text-decoration: none;
-    color: black;
-}
-
-#menu {
-    width: 40px;
-    height: 40px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: transparent;
-    border: none;
-    
-}
-
-#menu img {
-    width: 80%;
-}
 
 header, main, footer {
     margin: auto;
-    width: 60%;
+    width: 75%;
     display: block;
     justify-items: center;
+}
+
+header {
+    display: flex;
+    align-items: center;
+}
+
+h1 {
+    line-height: 95%;
+    margin-left: 0;
+}
+
+nav {
+    display: flex;
+    margin: 0 auto;
+}
+
+nav a {
+    padding-right: 15%;
+}
+
+a {
+    text-decoration: none;
+    color: var(--color);
+}
+
+#selector {
+    display: flex;
+    margin-right: 0;
+}
+
+#selector a {
+    padding-right: 15%;
+}
+
+#apresentacao {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#me {
+    border-radius: 50%;
+    max-width: 13%;
+    margin-top: 7%;
+}
+
+h2 {
+    font-size: 40px;
+    text-align: center;
+}
+
+#socials {
+    display: flex;
+    margin-top: 3%;
+}
+
+#socials a {
+    padding-right: 35px;
+}
+
+.azul .links {
+    filter: invert(28%) sepia(48%) saturate(622%) hue-rotate(131deg) brightness(94%) contrast(89%);
+}
+
+.laranja .links {
+    filter: invert(17%) sepia(13%) saturate(4175%) hue-rotate(333deg) brightness(100%) contrast(93%);
+}
+
+.verde .links {
+    filter: invert(26%) sepia(14%) saturate(2463%) hue-rotate(78deg) brightness(98%) contrast(88%);
+}
+
+.roxo .links {
+    filter: invert(15%) sepia(16%) saturate(5893%) hue-rotate(259deg) brightness(99%) contrast(102%);
+}
+
+.amarelo .links {
+    filter: invert(28%) sepia(12%) saturate(3520%) hue-rotate(19deg) brightness(97%) contrast(80%);
+}
+
+.rosa .links {
+    filter: invert(15%) sepia(27%) saturate(4490%) hue-rotate(280deg) brightness(90%) contrast(97%);
+}
+
+.vermelho .links {
+    filter: invert(8%) sepia(45%) saturate(4520%) hue-rotate(348deg) brightness(103%) contrast(88%);
+}
+
+main section {
+    padding-bottom: 10%;
+}
+
+.split {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+h4 {
+    font-size: 35px;
+    max-width: 45%;
+    padding-right: 15%;
+}
+
+#text {
+    
+    background-color: white;
+    border-radius: 5%;
+    padding: 30px;
+}
+
+.project {
+    margin-top: 5%;
+    background-color: white;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+
+#one {
+    margin-right: 5%;
+}
+
+h5 {
+    text-align: center;
+    font-size: 25px;
+}
+
+.desc {
+    font-size: small;
+    text-align: center;
+    padding: 6%;
+}
+
+.tags {
+    margin-bottom: 10%;
+}
+
+.tag {
+    background-color: var(--back);
+    font-size: x-small;
+    border-radius: 10%;
+    padding: 4px;
+}
+
+#more {
+    display: flex;
 }
