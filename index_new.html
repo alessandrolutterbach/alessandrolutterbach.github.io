@@ -5,41 +5,93 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alessandro Lutterbach</title>
     <link rel="stylesheet" type="text/css" href="style.css"/>
+    <link rel="preconnect" href="https://use.typekit.net" />
+    <link rel="stylesheet" href="https://use.typekit.net/oil3lyq.css" />
+    <script src="script.js"></script>
 </head>
-<body>
+<body onload="colorPicker()">
     <header>
-        <div class="container">
-            <a id="logo" href="/">Alessandro Lutterbach</a>
-            <button id="menu" type="button"><img src="assets/menu.svg"></button>
-            <nav style="display: none;">
-                <ul>
-                    <li>About</li>
-                    <li>Work</li>
-                    <li>Contact</li>
-                </ul>
-            </nav>
+        <h1>Alessandro<br>Lutterbach</h1>
+        <nav>
+            <a href="#about"><p>ABOUT</p></a>
+            <a href="#work"><p>WORK</p></a>
+            <a href="#contact"><p>CONTACT</p></a>
+        </nav>
+        <div id="selector">
+            <a><p>EN</p></a>
+            <a><p>PT</p></a>
         </div>
     </header>
     <main>
-        <section id="start">
-            <img>
-            <h1>Hello 👋🏻 I'm a Software Engineer from Brazil,</h1>
-            <div class="container">
-                <a><img src="assets/github.svg">GitHub</a>
-                <a><img src="assets/linkedin.svg">LinkedIn</a>
-                <a><img src="assets/twitter.svg">Twitter</a>
-                <a><img src="assets/instagram.svg">Instagram</a>
+        <section id="apresentacao">
+            <img id="me" src="assets/me.png">
+            <h2>Hello 👋🏻 I'm a Software Developer and Physics Teacher from Niterói, Rio de Janeiro, Brazil.</h2>
+            <div id="socials">
+                <a target="_blank" href="https://github.com/alessandrolutterbach"><img class="links" src="assets/github.svg"></a>
+                <a target="_blank" href="https://www.linkedin.com/in/alessandrolutterbach/"><img class="links" src="assets/linkedin.svg"></a>
+                <a target="_blank" href="mailto:alessandrolutterbach@gmail.com"><img class="links" src="assets/email.svg"></a>
+                <a target="_blank" href="https://twitter.com/alessandrogons"><img class="links" src="assets/twitter.svg"></a>
+                <a target="_blank" href="https://www.instagram.com/alelutter/"><img class="links" src="assets/instagram.svg"></a>
             </div>
         </section>
-        <section id="about"></section>
-        <section id="work"></section>
-        <section id="contact"></section>
+        <section id="about">
+            <h3>About me</h3>
+            <div class="split">
+                <h4>I'm a passionate physics teacher, with a great love for technology, who likes to mix this two worlds in benefit of education. ✍🏻</h4>
+                <div id="text"> 
+                    <p>I graduated in physics from Universidade Federal Fluminense (UFF) and have been teaching physics since 2018, at the beginning of graduation.</p>
+                    <p>But at the same time, I have been interested in and studied programming in a self-taught way since I was 16 years old.</p>
+                    <p>I'm interested in both backend and frontend areas and I'm very interested in learning new technologies. Whenever possible, I seek to apply my knowledge in physics and programming to create and collaborate in modern ways of teaching science to society.</p>
+                </div>
+                
+            </div>
+        </section>
+        <section id="work">
+            <h3>Work</h3>
+            <div class="split">
+                <a target="_blank" href="https://orbitasrelativisticas.github.io/">
+                <div class="project" id="one">
+                    <div class="logo">
+                        <img>
+                    </div>
+                    <h5>Órbitas Relativísticas</h5>
+                    <p class="desc">Simulator that generates orbits around black holes for massive bodies and light. Designed to be applied in high school and higher education.</p>
+                    <div class="tags">
+                        <a class="tag">HTML</a>
+                        <a class="tag">CSS</a>
+                        <a class="tag">Javascript</a>
+                        <a class="tag">Python</a>
+                        <a class="tag">Pyscript</a>
+                    </div>
+                </div>
+                </a>
+                <a target="_blank" href="relatividade/index.html">
+                    <div class="project">
+                        <div class="logo">
+                            <img>
+                        </div>
+                        <h5>Relatividade Geral</h5>
+                        <p class="desc">Virtual environment that seeks to teach high school students fundamental concepts of the Theory of General Relativity.</p>
+                        <div class="tags">
+                            <a class="tag">HTML</a>
+                            <a class="tag">CSS</a>
+                            <a class="tag">Javascript</a>
+                        </div>
+                    </div>
+                    </a>
+                </div>
+                <div id="more">
+                    <img class="links" src="assets/github.svg">
+                    <a href="https://github.com/alessandrolutterbach"><p>See more projects on my GitHub page.</p></a>
+                </div>
+
+        </section>
+        <section id="contact">
+            <h3>Contact</h3>
+        </section>
     </main>
     <footer>
-        <div class="container">
-            <p>© 2023. Made with ♥ by Alessandro Lutterbach.</p>
-        </div>
+
     </footer>
-    
 </body>
 </html>
