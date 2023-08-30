@@ -1,9 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 :root {
-    --font: 'obviously', sans-serif;
+    --font: 'rubik', sans-serif;
     --back: white;
     --color: black;
 }
+
+html {
+    scroll-behavior: smooth;
+}
+
+:target {
+    scroll-margin-top: 2vw;
+  }
+
 
 body {
     font-family: var(--font);
@@ -26,6 +36,7 @@ header {
 
 h1 {
     line-height: 95%;
+    font-size: xx-large;
     margin-left: 0;
 }
 
@@ -66,7 +77,7 @@ a {
 }
 
 h2 {
-    font-size: 40px;
+    font-size: 3.5vw;
     text-align: center;
 }
 
@@ -118,8 +129,12 @@ main section {
 
 }
 
+h3 {
+    font-size: 2vw;
+}
+
 h4 {
-    font-size: 35px;
+    font-size: 3vw;
     max-width: 45%;
     padding-right: 15%;
 }
@@ -129,10 +144,11 @@ h4 {
     background-color: white;
     border-radius: 5%;
     padding: 30px;
+    font-size: large;
 }
 
 .project {
-    margin-top: 5%;
+    margin-top: 3%;
     background-color: white;
     border-radius: 30px;
     display: flex;
@@ -146,13 +162,31 @@ h4 {
     margin-right: 5%;
 }
 
+.logo {
+    background-color: var(--back);
+    margin: auto;
+    margin-top: 8%;
+    width: 100px;
+    height: 100px;
+    border-radius: 6%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo img {
+    width: 75%;
+    
+}
+
 h5 {
     text-align: center;
-    font-size: 25px;
+    font-size: 2vw;
 }
 
 .desc {
-    font-size: small;
+    font-size: normal;
     text-align: center;
     padding: 6%;
 }
@@ -168,6 +202,30 @@ h5 {
     padding: 4px;
 }
 
+.container {
+    margin-top: 4%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    }
+
 #more {
     display: flex;
+    white-space: nowrap;
+}
+
+#git2 {
+    margin-right: 2%;
+}
+
+.full {
+    margin-top: 3%;
+    background-color: white;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
 }

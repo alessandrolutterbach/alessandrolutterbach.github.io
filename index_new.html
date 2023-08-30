@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="white">
+    <link rel="icon" type="image/x-icon" href="assets/favicon.png">
     <title>Alessandro Lutterbach</title>
     <link rel="stylesheet" type="text/css" href="style.css"/>
-    <link rel="preconnect" href="https://use.typekit.net" />
-    <link rel="stylesheet" href="https://use.typekit.net/oil3lyq.css" />
     <script src="script.js"></script>
 </head>
 <body onload="colorPicker()">
@@ -36,7 +36,7 @@
         </section>
         <section id="about">
             <h3>About me</h3>
-            <div class="split">
+            <div class="split" style="margin-top: 5vw">
                 <h4>I'm a passionate physics teacher, with a great love for technology, who likes to mix this two worlds in benefit of education. ✍🏻</h4>
                 <div id="text"> 
                     <p>I graduated in physics from Universidade Federal Fluminense (UFF) and have been teaching physics since 2018, at the beginning of graduation.</p>
@@ -52,7 +52,7 @@
                 <a target="_blank" href="https://orbitasrelativisticas.github.io/">
                 <div class="project" id="one">
                     <div class="logo">
-                        <img>
+                        <img class="links" src="assets/orb.png">
                     </div>
                     <h5>Órbitas Relativísticas</h5>
                     <p class="desc">Simulator that generates orbits around black holes for massive bodies and light. Designed to be applied in high school and higher education.</p>
@@ -68,7 +68,7 @@
                 <a target="_blank" href="relatividade/index.html">
                     <div class="project">
                         <div class="logo">
-                            <img>
+                            <img class="links" src="assets/rg.png">
                         </div>
                         <h5>Relatividade Geral</h5>
                         <p class="desc">Virtual environment that seeks to teach high school students fundamental concepts of the Theory of General Relativity.</p>
@@ -80,18 +80,29 @@
                     </div>
                     </a>
                 </div>
-                <div id="more">
-                    <img class="links" src="assets/github.svg">
-                    <a href="https://github.com/alessandrolutterbach"><p>See more projects on my GitHub page.</p></a>
+                <div class="container">
+                    <div id="more">
+                        <img class="links" id="git2" src="assets/github.svg">
+                        <a href="https://github.com/alessandrolutterbach"><p>See more projects on my GitHub page.</p></a>
+                    </div>
                 </div>
 
         </section>
         <section id="contact">
             <h3>Contact</h3>
+            <div class="container" style="margin-bottom: 0;">
+                <div class="full">
+                    <p id="text" style="text-align: center; font-size: 3vw; margin-bottom: 0">🤙🏻</p>
+                    <h2 style="margin-top: 0; margin-bottom: 0;">Do you want to talk to me?</h2>
+                    <p id="text" style="text-align: center; margin-bottom: 0;">Drop me a message on the email below and I will get back to you<br>as soon as possible.</p>
+                    <a href="mailto:alessandrolutterbach@gmail.com"><h5>alessandrolutterbach@gmail.com</h5></a>
+                </div>
+            </div>
         </section>
     </main>
     <footer>
-
+        <div class="container" style="margin-top: 0;">
+            <p>© 2023. Made with love by Alessandro Lutterbach.</p>
     </footer>
 </body>
 </html>

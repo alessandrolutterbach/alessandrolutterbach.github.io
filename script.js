@@ -14,4 +14,7 @@ function colorPicker() {
 
     var b = document.querySelector('body');
     b.classList.add(tema[i]);
+
+    var t = document.querySelector('meta[name="theme-color"]')
+    t.setAttribute("content", fundos[i]);
 }
