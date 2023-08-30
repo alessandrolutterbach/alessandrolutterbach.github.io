@@ -60,7 +60,7 @@ a {
 }
 
 #selector a {
-    padding-right: 15%;
+    margin-right: 15%;
 }
 
 #apresentacao {
@@ -228,4 +228,100 @@ h5 {
     justify-content: center;
     align-items: center;
     width: 80%;
+}
+
+#selected {
+    font-weight: bold;
+}
+
+#emoji {
+    font-size: 3em;
+
+}
+
+@media (max-width: 480px) {
+    nav {
+        display: none;
+    }
+
+    header {
+        display: block;
+    }
+
+    header, main, footer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+    }
+
+    h2 {
+        font-size: xx-large;
+    }
+
+    h3 {
+        font-size: large;
+        text-align: left;
+        margin-left: 2%;
+    }
+
+    h4 {
+        font-size: x-large;
+        text-align: left;
+        max-width: 100%;
+        padding-right: 0%;
+        margin-left: 2%;
+    }
+
+    h5 {
+        font-size: x-large;
+    }
+
+    #text {
+        border-radius: 1em;
+        padding: 1em;
+        font-size: normal; 
+        text-align: left;
+        margin-left: 2%;
+    }
+
+    #me {
+        max-width: 26%;
+        margin-top: 15%;
+    }
+
+    #socials {
+        margin-bottom: 15%;
+    }
+
+    .split {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .project {
+        width: 100%;
+        border-radius: 1em;
+    }
+
+    #one {
+        margin-right: 0%;
+    }
+
+    #contact h3 {
+        display: none
+    }
+
+    .full {
+        border-radius: 1em;
+        width: 99%;
+    }
+
+    .full  h5 {
+        font-size: large;
+    }
 }

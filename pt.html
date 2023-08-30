@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,19 +13,19 @@
     <header>
         <h1>Alessandro<br>Lutterbach</h1>
         <nav>
-            <a href="#about"><p>ABOUT</p></a>
-            <a href="#work"><p>WORK</p></a>
-            <a href="#contact"><p>CONTACT</p></a>
+            <a href="#about"><p>SOBRE</p></a>
+            <a href="#work"><p>PROJETOS</p></a>
+            <a href="#contact"><p>CONTATO</p></a>
         </nav>
         <div id="selector">
-            <a><p>EN</p></a>
-            <a><p>PT</p></a>
+            <a id="unselected" href="index.html"><p>EN</p></a>
+            <a id="selected"><p>PT</p></a>
         </div>
     </header>
     <main>
         <section id="apresentacao">
-            <img id="me" src="assets/me.png">
-            <h2>Hello 👋🏻 I'm a Software Developer and Physics Teacher from Niterói, Rio de Janeiro, Brazil.</h2>
+            <img id="me" src="assets/me.jpg">
+            <h2>Olá 👋🏻 Eu sou um desenvolvedor de software e professor de Física de Niterói, Rio de Janeiro, Brazil.</h2>
             <div id="socials">
                 <a target="_blank" href="https://github.com/alessandrolutterbach"><img class="links" src="assets/github.svg"></a>
                 <a target="_blank" href="https://www.linkedin.com/in/alessandrolutterbach/"><img class="links" src="assets/linkedin.svg"></a>
@@ -35,19 +35,19 @@
             </div>
         </section>
         <section id="about">
-            <h3>About me</h3>
+            <h3>Sobre mim</h3>
             <div class="split" style="margin-top: 5vw">
-                <h4>I'm a passionate physics teacher, with a great love for technology, who likes to mix this two worlds in benefit of education. ✍🏻</h4>
+                <h4>Sou um professor de física apaixonado, com grande amor pela tecnologia, que gosta de misturar esses dois mundos em benefício da educação. ✍🏻</h4>
                 <div id="text"> 
-                    <p>I graduated in physics from Universidade Federal Fluminense (UFF) and have been teaching physics since 2018, at the beginning of graduation.</p>
-                    <p>But at the same time, I have been interested in and studied programming in a self-taught way since I was 16 years old.</p>
-                    <p>I'm interested in both backend and frontend areas and I'm very interested in learning new technologies. Whenever possible, I seek to apply my knowledge in physics and programming to create and collaborate in modern ways of teaching science to society.</p>
+                    <p>Sou formado em física pela Universidade Federal Fluminense (UFF) e dou aulas de física desde 2018, quando ainda estava no início da graduação.</p>
+                    <p>Mas, ao mesmo tempo, tenho me interessado e estudado programação de forma autodidata desde os meus 16 anos.</p>
+                    <p>Tenho interesse tanto na área backend quanto frontend, assim como em aprender novas tecnologias. Sempre que possível, procuro aplicar meus conhecimentos em física e programação para criar e colaborar em formas modernas de ensinar ciências à sociedade.</p>
                 </div>
                 
             </div>
         </section>
         <section id="work">
-            <h3>Work</h3>
+            <h3>Projetos</h3>
             <div class="split">
                 <a target="_blank" href="https://orbitasrelativisticas.github.io/">
                 <div class="project" id="one">
@@ -55,7 +55,7 @@
                         <img class="links" src="assets/orb.png">
                     </div>
                     <h5>Órbitas Relativísticas</h5>
-                    <p class="desc">Simulator that generates orbits around black holes for massive bodies and light. Designed to be applied in high school and higher education.</p>
+                    <p class="desc">Simulador que gera órbitas em torno de buracos negros para corpos massivos e para a luz. Projetado para ser aplicado no ensino médio e superior.</p>
                     <div class="tags">
                         <a class="tag">HTML</a>
                         <a class="tag">CSS</a>
@@ -71,7 +71,7 @@
                             <img class="links" src="assets/rg.png">
                         </div>
                         <h5>Relatividade Geral</h5>
-                        <p class="desc">Virtual environment that seeks to teach high school students fundamental concepts of the Theory of General Relativity.</p>
+                        <p class="desc">Ambiente virtual que busca ensinar aos alunos do ensino médio conceitos fundamentais da Teoria da Relatividade Geral.</p>
                         <div class="tags">
                             <a class="tag">HTML</a>
                             <a class="tag">CSS</a>
@@ -83,7 +83,7 @@
                 <div class="container">
                     <div id="more">
                         <img class="links" id="git2" src="assets/github.svg">
-                        <a href="https://github.com/alessandrolutterbach"><p>See more projects on my GitHub page.</p></a>
+                        <a href="https://github.com/alessandrolutterbach"><p>Veja mais projetos na minha página GitHub.</p></a>
                     </div>
                 </div>
 
@@ -92,9 +92,9 @@
             <h3>Contact</h3>
             <div class="container" style="margin-bottom: 0;">
                 <div class="full">
-                    <p id="text" style="text-align: center; font-size: 3vw; margin-bottom: 0">🤙🏻</p>
-                    <h2 style="margin-top: 0; margin-bottom: 0;">Do you want to talk to me?</h2>
-                    <p id="text" style="text-align: center; margin-bottom: 0;">Drop me a message on the email below and I will get back to you<br>as soon as possible.</p>
+                    <p id="emoji" style="text-align: center;">🤙🏻</p>
+                    <h2 style="margin-top: 0; margin-bottom: 0;">Quer falar comigo?</h2>
+                    <p id="text" style="text-align: center; margin-bottom: 0;">Deixe uma mensagem no email abaixo e eu vou te responder<br>assim que for popssível.</p>
                     <a href="mailto:alessandrolutterbach@gmail.com"><h5>alessandrolutterbach@gmail.com</h5></a>
                 </div>
             </div>
@@ -102,7 +102,7 @@
     </main>
     <footer>
         <div class="container" style="margin-top: 0;">
-            <p>© 2023. Made with love by Alessandro Lutterbach.</p>
+            <p>© 2023. Feito com amor por Alessandro Lutterbach.</p>
     </footer>
 </body>
 </html>
