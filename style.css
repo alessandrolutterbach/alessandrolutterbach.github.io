@@ -44,6 +44,7 @@ h1 {
 nav {
     display: flex;
     margin: 0 auto;
+    margin-left: 24%;
 }
 
 nav a {
@@ -212,7 +213,7 @@ h5 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 80%;
+    width: 100%;
 }
 
 #selected {
