@@ -2,8 +2,9 @@
 
 :root {
     --font: 'rubik', sans-serif;
-    --back: white;
-    --color: black;
+    --back: #0c1319;
+    --card: #003449;
+    --color: #7dcdf4;
 }
 
 html {
@@ -68,12 +69,17 @@ a {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-color: var(--card);
+    border-radius: 30px;
+    padding-bottom: 3%;
+    margin-top: 2%;
+    margin-bottom: 5%;
 }
 
 #me {
     border-radius: 50%;
     max-width: 13%;
-    margin-top: 7%;
+    margin-top: 3%;
 }
 
 h2 {
@@ -90,33 +96,10 @@ h2 {
     padding-right: 35px;
 }
 
-.azul .links {
-    filter: invert(28%) sepia(48%) saturate(622%) hue-rotate(131deg) brightness(94%) contrast(89%);
+.links {
+    filter: invert(66%) sepia(63%) saturate(301%) hue-rotate(160deg) brightness(103%) contrast(91%);
 }
 
-.laranja .links {
-    filter: invert(17%) sepia(13%) saturate(4175%) hue-rotate(333deg) brightness(100%) contrast(93%);
-}
-
-.verde .links {
-    filter: invert(26%) sepia(14%) saturate(2463%) hue-rotate(78deg) brightness(98%) contrast(88%);
-}
-
-.roxo .links {
-    filter: invert(15%) sepia(16%) saturate(5893%) hue-rotate(259deg) brightness(99%) contrast(102%);
-}
-
-.amarelo .links {
-    filter: invert(28%) sepia(12%) saturate(3520%) hue-rotate(19deg) brightness(97%) contrast(80%);
-}
-
-.rosa .links {
-    filter: invert(15%) sepia(27%) saturate(4490%) hue-rotate(280deg) brightness(90%) contrast(97%);
-}
-
-.vermelho .links {
-    filter: invert(8%) sepia(45%) saturate(4520%) hue-rotate(348deg) brightness(103%) contrast(88%);
-}
 
 main section {
     padding-bottom: 10%;
@@ -141,7 +124,7 @@ h4 {
 
 #text {
     
-    background-color: white;
+    background-color: var(--card);
     border-radius: 5%;
     padding: 30px;
     font-size: large;
@@ -149,7 +132,7 @@ h4 {
 
 .project {
     margin-top: 3%;
-    background-color: white;
+    background-color: var(--card);
     border-radius: 30px;
     display: flex;
     flex-direction: column;
@@ -157,6 +140,7 @@ h4 {
     align-items: center;
     width: 50%;
     min-height: 100%;
+    max-height: 100%;
 }
 
 #one {
@@ -222,7 +206,7 @@ h5 {
 
 .full {
     margin-top: 3%;
-    background-color: white;
+    background-color: var(--card);
     border-radius: 30px;
     display: flex;
     flex-direction: column;
