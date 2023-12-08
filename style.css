@@ -245,7 +245,7 @@ h5 {
         justify-content: center;
         align-items: center;
         text-align: center;
-        width: 100%;
+        width: 98%;
     }
 
     h2 {
@@ -301,6 +301,10 @@ h5 {
 
     #one {
         margin-right: 0%;
+    }
+
+    #education {
+        width: 100%;
     }
 
     #contact h3 {
